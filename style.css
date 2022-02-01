@@ -73,3 +73,30 @@
     margin-left: 590px;
     font-size: 40px;
 }
+
+
+
+#sub{
+    height: 50px;
+    width: 200px;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 15px;
+    background-color: rgba(207, 209, 212, 0.4);
+    text-align: center;
+    margin-left: 15px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#last{
+    background-image: url("https://img1.goodfon.com/wallpaper/nbig/d/87/boeing-samolet-nebo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(56, 55, 55);
+    display: none;
+}

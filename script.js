@@ -37,3 +37,8 @@ function tk(){
     let total=resultfrTk+resultScTk+resultTrTk+frTax+scTax+trTax;
     document.getElementById("totalTk").innerText=total;
 }
+
+function hide(){
+    document.getElementById("last").style.display="block";
+    document.getElementById("main").style.display="none";
+}
