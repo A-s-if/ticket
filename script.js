@@ -1,44 +1,43 @@
-//firstclass ticket
-
-function ticketNumber(ticket,increase){
-    let frTicket= document.getElementById(ticket);
-    let parfrTicket=parseInt(frTicket.innerText);
-    if(increase==true){
-        parfrTicket=parfrTicket+1;
-    }
-    if(increase==false && parfrTicket>0){
-        parfrTicket=parfrTicket-1;
-    }
-
-    frTicket.innerText=parfrTicket;
-    tk()
+const math= function number(num,num2){
+    let result=num+num2;
+    return result
 }
 
-function tk(){
-    let frTk=parseInt(document.getElementById("frTicket").innerText);
-    let resultfrTk=frTk*5000;
-    document.getElementById("frTk").innerText=resultfrTk;
-    let scTk=parseInt(document.getElementById("scTicket").innerText);
-    let resultScTk=scTk*3000;
-    document.getElementById("scTk").innerText=resultScTk;
-    let trTk=parseInt(document.getElementById("trTicket").innerText);
-    let resultTrTk=trTk*2000;
-    document.getElementById("trTk").innerText=resultTrTk;
-    
-    let frTax=resultfrTk*0.1;
-    document.getElementById("frVat").innerText=frTax;
+//console.log(math(10,11))
 
-    let scTax=resultScTk*0.1;
-    document.getElementById("scVat").innerText=scTax;
+const addNumber=(a,b)=> (a+b)
 
-    let trTax=resultTrTk*0.1;
-    document.getElementById("trVat").innerText=trTax;
+//console.log(addNumber(30,40))
 
-    let total=resultfrTk+resultScTk+resultTrTk+frTax+scTax+trTax;
-    document.getElementById("totalTk").innerText=total;
+const addNumber2=() =>{
+    let num=40;
+    let num2=40;
+    let result=num+num2;
+    return result
 }
 
-function hide(){
-    document.getElementById("last").style.display="block";
-    document.getElementById("main").style.display="none";
+
+//console.log(addNumber2())
+
+const squre= () =>{
+    let num=30;
+    let result=num*num;
+    return result
 }
+//console.log(squre())
+
+const squre2=num =>{
+    let result=num*num;
+    return result
+}
+//console.log(squre2(4))
+
+const squre3=num=>num*num
+//console.log(squre3(4))
+
+const friendName=["Zayed Khan","Nipun","Eliyas Kanchon","Dipjol","Eliyas Kobra"]
+//friendName.map(friends => console.log("Hi "+friends))
+const biggerName= friendName.filter(person => person.length>10 )
+//console.log(biggerName)
+const biggerName2=friendName.find((person) => person.length>10)
+console.log(biggerName2)
